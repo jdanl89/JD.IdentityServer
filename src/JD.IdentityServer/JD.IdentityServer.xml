@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>JD.IdentityServer</name>
+    </assembly>
+    <members>
+        <member name="T:JD.IdentityServer.Config">
+            <summary>
+            The identity server configuration.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Config.ApiScopes">
+            <summary>
+            Gets the API Scopes.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Config.Clients">
+            <summary>
+            Gets the identity server clients.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Config.IdentityResources">
+            <summary>
+            Gets the identity resources.
+            </summary>
+        </member>
+        <member name="T:JD.IdentityServer.HostingExtensions">
+            <summary>
+            Extension methods for hosting services.
+            </summary>
+        </member>
+        <member name="M:JD.IdentityServer.HostingExtensions.ConfigurePipeline(Microsoft.AspNetCore.Builder.WebApplication)">
+            <summary>
+            Configures the identity server's pipeline.
+            </summary>
+            <param name="app"><inheritdoc cref="T:Microsoft.AspNetCore.Builder.WebApplication"/></param>
+            <returns><inheritdoc cref="T:Microsoft.AspNetCore.Builder.WebApplication"/></returns>
+        </member>
+        <member name="M:JD.IdentityServer.HostingExtensions.ConfigureServices(Microsoft.AspNetCore.Builder.WebApplicationBuilder)">
+            <summary>
+            Configures the identity server client.
+            </summary>
+            <param name="builder"><inheritdoc cref="T:Microsoft.AspNetCore.Builder.WebApplicationBuilder"/></param>
+            <returns><inheritdoc cref="T:Microsoft.AspNetCore.Builder.WebApplication"/></returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,6 @@
+<RuleSet Name="StyleCop Rules" Description="These rules to be enforced by the StyleCop analyzer." ToolsVersion="10.0">
+  <Localization ResourceAssembly="Microsoft.VisualStudio.CodeAnalysis.RuleSets.Strings.dll" ResourceBaseName="Microsoft.VisualStudio.CodeAnalysis.RuleSets.Strings.Localized">
+    <Name Resource="StyleCopRules" />
+    <Description Resource="StyleCopRules" />
+  </Localization>
+</RuleSet>
