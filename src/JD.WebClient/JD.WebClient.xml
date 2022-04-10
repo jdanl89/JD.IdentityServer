@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>JD.WebClient</name>
+    </assembly>
+    <members>
+        <member name="T:JD.WebClient.Pages.CallApi">
+            <summary>
+            The CallApi model.
+            </summary>
+        </member>
+        <member name="F:JD.WebClient.Pages.CallApi.Json">
+            <summary>
+            Gets or sets the JSON string value.
+            </summary>
+        </member>
+        <member name="M:JD.WebClient.Pages.CallApi.OnGet">
+            <summary>
+            The method called on HttpGet request.
+            </summary>
+            <returns>The view.</returns>
+        </member>
+        <member name="T:JD.WebClient.Pages.ErrorModel">
+            <summary>
+            The error model.
+            </summary>
+        </member>
+        <member name="F:JD.WebClient.Pages.ErrorModel._logger">
+            <inheritdoc cref="T:Microsoft.Extensions.Logging.ILogger`1"/>
+        </member>
+        <member name="M:JD.WebClient.Pages.ErrorModel.#ctor(Microsoft.Extensions.Logging.ILogger{JD.WebClient.Pages.ErrorModel})">
+            <summary>
+            Initializes a new instance of the <see cref="T:JD.WebClient.Pages.ErrorModel"/> class.
+            </summary>
+            <param name="logger"><inheritdoc cref="T:Microsoft.Extensions.Logging.ILogger`1"/></param>
+        </member>
+        <member name="P:JD.WebClient.Pages.ErrorModel.RequestId">
+            <summary>
+            Gets or sets the request ID.
+            </summary>
+        </member>
+        <member name="P:JD.WebClient.Pages.ErrorModel.ShowRequestId">
+            <summary>
+            Gets a value indicating whether to show the request ID.
+            </summary>
+        </member>
+        <member name="M:JD.WebClient.Pages.ErrorModel.OnGet">
+            <summary>
+            The method called on HttpGet request.
+            </summary>
+        </member>
+        <member name="T:JD.WebClient.Pages.IndexModel">
+            <summary>
+            The Index model.
+            </summary>
+        </member>
+        <member name="M:JD.WebClient.Pages.IndexModel.#ctor(Microsoft.Extensions.Logging.ILogger{JD.WebClient.Pages.IndexModel})">
+            <summary>
+            Initializes a new instance of the <see cref="T:JD.WebClient.Pages.IndexModel"/> class.
+            </summary>
+            <param name="logger"><inheritdoc cref="T:Microsoft.Extensions.Logging.ILogger`1"/></param>
+        </member>
+        <member name="M:JD.WebClient.Pages.IndexModel.OnGet">
+            <summary>
+            The method called on HttpGet request.
+            </summary>
+        </member>
+        <member name="T:JD.WebClient.Pages.PrivacyModel">
+            <summary>
+            The Privacy model.
+            </summary>
+        </member>
+        <member name="M:JD.WebClient.Pages.PrivacyModel.#ctor(Microsoft.Extensions.Logging.ILogger{JD.WebClient.Pages.PrivacyModel})">
+            <summary>
+            Initializes a new instance of the <see cref="T:JD.WebClient.Pages.PrivacyModel"/> class.
+            </summary>
+            <param name="logger"><inheritdoc cref="T:Microsoft.Extensions.Logging.ILogger`1"/></param>
+        </member>
+        <member name="M:JD.WebClient.Pages.PrivacyModel.OnGet">
+            <summary>
+            The method called on HttpGet request.
+            </summary>
+        </member>
+        <member name="T:JD.IdentityServer.Pages.Account.Signout.Signout">
+            <summary>
+            The Signout model.
+            </summary>
+        </member>
+        <member name="M:JD.IdentityServer.Pages.Account.Signout.Signout.OnGet">
+            <summary>
+            The method called on HttpGet request.
+            </summary>
+            <returns>The signout result.</returns>
+        </member>
+    </members>
+</doc>

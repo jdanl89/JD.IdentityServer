@@ -43,5 +43,1201 @@
             <param name="builder"><inheritdoc cref="T:Microsoft.AspNetCore.Builder.WebApplicationBuilder"/></param>
             <returns><inheritdoc cref="T:Microsoft.AspNetCore.Builder.WebApplication"/></returns>
         </member>
+        <member name="T:JD.IdentityServer.Pages.Account.AccessDeniedModel">
+            <summary>
+            The Access Denied model.
+            </summary>
+        </member>
+        <member name="M:JD.IdentityServer.Pages.Account.AccessDeniedModel.OnGet">
+            <summary>
+            The method called on HttpGet request.
+            </summary>
+        </member>
+        <member name="T:JD.IdentityServer.Pages.Account.Login.Index">
+            <summary>
+            The index model.
+            </summary>
+        </member>
+        <member name="M:JD.IdentityServer.Pages.Account.Login.Index.#ctor(Duende.IdentityServer.Services.IIdentityServerInteractionService,Duende.IdentityServer.Stores.IClientStore,Microsoft.AspNetCore.Authentication.IAuthenticationSchemeProvider,Duende.IdentityServer.Stores.IIdentityProviderStore,Duende.IdentityServer.Services.IEventService,Duende.IdentityServer.Test.TestUserStore)">
+            <summary>
+            Initializes a new instance of the <see cref="T:JD.IdentityServer.Pages.Account.Login.Index"/> class.
+            </summary>
+            <param name="interaction"><inheritdoc cref="T:Duende.IdentityServer.Services.IIdentityServerInteractionService"/></param>
+            <param name="clientStore"><inheritdoc cref="T:Duende.IdentityServer.Stores.IClientStore"/></param>
+            <param name="schemeProvider"><inheritdoc cref="T:Microsoft.AspNetCore.Authentication.IAuthenticationSchemeProvider"/></param>
+            <param name="identityProviderStore"><inheritdoc cref="T:Duende.IdentityServer.Stores.IIdentityProviderStore"/></param>
+            <param name="events"><inheritdoc cref="T:Duende.IdentityServer.Services.IEventService"/></param>
+            <param name="users"><inheritdoc cref="T:Duende.IdentityServer.Test.TestUserStore"/></param>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Account.Login.Index.Input">
+            <summary>
+            Gets or sets the input model.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Account.Login.Index.View">
+            <summary>
+            Gets or sets the view model.
+            </summary>
+        </member>
+        <member name="M:JD.IdentityServer.Pages.Account.Login.Index.OnGet(System.String)">
+            <summary>
+            The method called on HttpGet request.
+            </summary>
+            <param name="returnUrl">The return url.</param>
+            <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> representing the result of the asynchronous operation.</returns>
+        </member>
+        <member name="M:JD.IdentityServer.Pages.Account.Login.Index.OnPost">
+            <summary>
+            The method called on HttpPost request.
+            </summary>
+            <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> representing the result of the asynchronous operation.</returns>
+        </member>
+        <member name="T:JD.IdentityServer.Pages.Account.Login.InputModel">
+            <summary>
+            The input model.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Account.Login.InputModel.Button">
+            <summary>
+            Gets or sets the button text.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Account.Login.InputModel.Password">
+            <summary>
+            Gets or sets the password.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Account.Login.InputModel.RememberLogin">
+            <summary>
+            Gets or sets a value indicating whether the login should be remembered.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Account.Login.InputModel.ReturnUrl">
+            <summary>
+            Gets or sets the return url.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Account.Login.InputModel.Username">
+            <summary>
+            Gets or sets the username.
+            </summary>
+        </member>
+        <member name="T:JD.IdentityServer.Pages.Account.Login.LoginOptions">
+            <summary>
+            The login options.
+            </summary>
+        </member>
+        <member name="F:JD.IdentityServer.Pages.Account.Login.LoginOptions.AllowLocalLogin">
+            <summary>
+            Gets a value indicating whether to allow local login.
+            </summary>
+        </member>
+        <member name="F:JD.IdentityServer.Pages.Account.Login.LoginOptions.AllowRememberLogin">
+            <summary>
+            Gets a value indicating whether to allow the login to be remembered.
+            </summary>
+        </member>
+        <member name="F:JD.IdentityServer.Pages.Account.Login.LoginOptions.InvalidCredentialsErrorMessage">
+            <summary>
+            Gets the error message to be shown when credentials are invalid.
+            </summary>
+        </member>
+        <member name="F:JD.IdentityServer.Pages.Account.Login.LoginOptions.RememberMeLoginDuration">
+            <summary>
+            Gets the duration for which a user's login should be remembered.
+            </summary>
+        </member>
+        <member name="T:JD.IdentityServer.Pages.Account.Login.ViewModel">
+            <summary>
+            The login view model.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Account.Login.ViewModel.AllowRememberLogin">
+            <summary>
+            Gets or sets a value indicating whether to allow the login to be remembered.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Account.Login.ViewModel.EnableLocalLogin">
+            <summary>
+            Gets or sets a value indicating whether to enable local login.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Account.Login.ViewModel.ExternalLoginScheme">
+            <summary>
+            Gets the external login scheme.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Account.Login.ViewModel.ExternalProviders">
+            <summary>
+            Gets or sets the list of external providers.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Account.Login.ViewModel.IsExternalLoginOnly">
+            <summary>
+            Gets a value indicating whether the request is solely for external login.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Account.Login.ViewModel.VisibleExternalProviders">
+            <summary>
+            Gets the list of visible external providers.
+            </summary>
+        </member>
+        <member name="T:JD.IdentityServer.Pages.Account.Login.ViewModel.ExternalProvider">
+            <summary>
+            The external provider model.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Account.Login.ViewModel.ExternalProvider.AuthenticationScheme">
+            <summary>
+            Gets or sets the authentication scheme.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Account.Login.ViewModel.ExternalProvider.DisplayName">
+            <summary>
+            Gets or sets the display name.
+            </summary>
+        </member>
+        <member name="T:JD.IdentityServer.Pages.Account.Logout.Index">
+            <summary>
+            The Index model.
+            </summary>
+        </member>
+        <member name="M:JD.IdentityServer.Pages.Account.Logout.Index.#ctor(Duende.IdentityServer.Services.IIdentityServerInteractionService,Duende.IdentityServer.Services.IEventService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:JD.IdentityServer.Pages.Account.Logout.Index"/> class.
+            </summary>
+            <param name="interaction"><inheritdoc cref="T:Duende.IdentityServer.Services.IIdentityServerInteractionService"/></param>
+            <param name="events"><inheritdoc cref="T:Duende.IdentityServer.Services.IEventService"/></param>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Account.Logout.Index.LogoutId">
+            <summary>
+            Gets or sets the logout ID.
+            </summary>
+        </member>
+        <member name="M:JD.IdentityServer.Pages.Account.Logout.Index.OnGet(System.String)">
+            <summary>
+            The method called on HttpGet request.
+            </summary>
+            <param name="logoutId">The logout ID.</param>
+            <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> representing the result of the asynchronous operation.</returns>
+        </member>
+        <member name="M:JD.IdentityServer.Pages.Account.Logout.Index.OnPost">
+            <summary>
+            The method called on HttpPost request.
+            </summary>
+            <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> representing the result of the asynchronous operation.</returns>
+        </member>
+        <member name="T:JD.IdentityServer.Pages.Account.Logout.LoggedOut">
+            <summary>
+            The Logged Out model.
+            </summary>
+        </member>
+        <member name="M:JD.IdentityServer.Pages.Account.Logout.LoggedOut.#ctor(Duende.IdentityServer.Services.IIdentityServerInteractionService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:JD.IdentityServer.Pages.Account.Logout.LoggedOut"/> class.
+            </summary>
+            <param name="interactionService"><inheritdoc cref="T:Duende.IdentityServer.Services.IIdentityServerInteractionService"/></param>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Account.Logout.LoggedOut.View">
+            <summary>
+            Gets or sets the view model.
+            </summary>
+        </member>
+        <member name="M:JD.IdentityServer.Pages.Account.Logout.LoggedOut.OnGet(System.String)">
+            <summary>
+            The method called on HttpGet request.
+            </summary>
+            <param name="logoutId">The logout ID.</param>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> representing the result of the asynchronous operation.</returns>
+        </member>
+        <member name="T:JD.IdentityServer.Pages.Account.Logout.LoggedOutViewModel">
+            <summary>
+            The logged out view model.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Account.Logout.LoggedOutViewModel.AutomaticRedirectAfterSignOut">
+            <summary>
+            Gets or sets a value indicating whether the user should be automatically redirected after sign out.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Account.Logout.LoggedOutViewModel.ClientName">
+            <summary>
+            Gets or sets the client name.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Account.Logout.LoggedOutViewModel.PostLogoutRedirectUri">
+            <summary>
+            Gets or sets the post logout redirect uri.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Account.Logout.LoggedOutViewModel.SignOutIframeUrl">
+            <summary>
+            Gets or sets the signout iframe url.
+            </summary>
+        </member>
+        <member name="T:JD.IdentityServer.Pages.Account.Logout.LogoutOptions">
+            <summary>
+            The logout options.
+            </summary>
+        </member>
+        <member name="F:JD.IdentityServer.Pages.Account.Logout.LogoutOptions.AutomaticRedirectAfterSignOut">
+            <summary>
+            Gets a value indicating whether the user should be automatically redirected after signout.
+            </summary>
+        </member>
+        <member name="F:JD.IdentityServer.Pages.Account.Logout.LogoutOptions.ShowLogoutPrompt">
+            <summary>
+            Gets a value indicating whether the logout prompt should be shown.
+            </summary>
+        </member>
+        <member name="T:JD.IdentityServer.Pages.Ciba.AllModel">
+            <summary>
+            The All model.
+            </summary>
+        </member>
+        <member name="F:JD.IdentityServer.Pages.Ciba.AllModel._backchannelAuthenticationInteraction">
+            <inheritdoc cref="T:Duende.IdentityServer.Services.IBackchannelAuthenticationInteractionService"/>
+        </member>
+        <member name="M:JD.IdentityServer.Pages.Ciba.AllModel.#ctor(Duende.IdentityServer.Services.IBackchannelAuthenticationInteractionService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:JD.IdentityServer.Pages.Ciba.AllModel"/> class.
+            </summary>
+            <param name="backchannelAuthenticationInteractionService"><inheritdoc cref="T:Duende.IdentityServer.Services.IBackchannelAuthenticationInteractionService"/></param>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Ciba.AllModel.Button">
+            <summary>
+            Gets or sets the button value.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Ciba.AllModel.Id">
+            <summary>
+            Gets or sets the ID.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Ciba.AllModel.Logins">
+            <summary>
+            Gets or sets the list of backchannel user login requests.
+            </summary>
+        </member>
+        <member name="M:JD.IdentityServer.Pages.Ciba.AllModel.OnGet">
+            <summary>
+            The method called on HttpGet request.
+            </summary>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> representing the result of the asynchronous operation.</returns>
+        </member>
+        <member name="T:JD.IdentityServer.Pages.Ciba.Consent">
+            <summary>
+            The Consent model.
+            </summary>
+        </member>
+        <member name="M:JD.IdentityServer.Pages.Ciba.Consent.#ctor(Duende.IdentityServer.Services.IBackchannelAuthenticationInteractionService,Duende.IdentityServer.Services.IEventService,Microsoft.Extensions.Logging.ILogger{JD.IdentityServer.Pages.Index})">
+            <summary>
+            Initializes a new instance of the <see cref="T:JD.IdentityServer.Pages.Ciba.Consent"/> class.
+            </summary>
+            <param name="interaction"><inheritdoc cref="T:Duende.IdentityServer.Services.IBackchannelAuthenticationInteractionService"/></param>
+            <param name="events"><inheritdoc cref="T:Duende.IdentityServer.Services.IEventService"/></param>
+            <param name="logger"><inheritdoc cref="T:Microsoft.Extensions.Logging.ILogger`1"/></param>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Ciba.Consent.Input">
+            <summary>
+            Gets or sets the Input model.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Ciba.Consent.View">
+            <summary>
+            Gets or sets the view model.
+            </summary>
+        </member>
+        <member name="M:JD.IdentityServer.Pages.Ciba.Consent.CreateScopeViewModel(Duende.IdentityServer.Validation.ParsedScopeValue,Duende.IdentityServer.Models.ApiScope,System.Boolean)">
+            <summary>
+            Creates the scope view model.
+            </summary>
+            <param name="parsedScopeValue"><inheritdoc cref="T:Duende.IdentityServer.Validation.ParsedScopeValue"/></param>
+            <param name="apiScope"><inheritdoc cref="T:Duende.IdentityServer.Models.ApiScope"/></param>
+            <param name="check">A value used to set the view model's Checked value.</param>
+            <returns><inheritdoc cref="T:JD.IdentityServer.Pages.Ciba.ScopeViewModel"/></returns>
+        </member>
+        <member name="M:JD.IdentityServer.Pages.Ciba.Consent.OnGet(System.String)">
+            <summary>
+            The method called on HttpGet request.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> representing the result of the asynchronous operation.</returns>
+        </member>
+        <member name="M:JD.IdentityServer.Pages.Ciba.Consent.OnPost">
+            <summary>
+            The method called on HttpPost request.
+            </summary>
+            <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> representing the result of the asynchronous operation.</returns>
+        </member>
+        <member name="T:JD.IdentityServer.Pages.Ciba.ConsentOptions">
+            <summary>
+            The consent options.
+            </summary>
+        </member>
+        <member name="F:JD.IdentityServer.Pages.Ciba.ConsentOptions.InvalidSelectionErrorMessage">
+            <summary>
+            Gets the invalid selection error message.
+            </summary>
+        </member>
+        <member name="F:JD.IdentityServer.Pages.Ciba.ConsentOptions.MustChooseOneErrorMessage">
+            <summary>
+            Gets the must choose one error message.
+            </summary>
+        </member>
+        <member name="F:JD.IdentityServer.Pages.Ciba.ConsentOptions.EnableOfflineAccess">
+            <summary>
+            Gets a value indicating whether to enable offline access.
+            </summary>
+        </member>
+        <member name="F:JD.IdentityServer.Pages.Ciba.ConsentOptions.OfflineAccessDescription">
+            <summary>
+            Gets the offline access description.
+            </summary>
+        </member>
+        <member name="F:JD.IdentityServer.Pages.Ciba.ConsentOptions.OfflineAccessDisplayName">
+            <summary>
+            Gets the offline access display name.
+            </summary>
+        </member>
+        <member name="T:JD.IdentityServer.Pages.Ciba.IndexModel">
+            <summary>
+            The index model.
+            </summary>
+        </member>
+        <member name="F:JD.IdentityServer.Pages.Ciba.IndexModel._backchannelAuthenticationInteraction">
+            <inheritdoc cref="T:Duende.IdentityServer.Services.IBackchannelAuthenticationInteractionService"/>>
+        </member>
+        <member name="F:JD.IdentityServer.Pages.Ciba.IndexModel._logger">
+            <inheritdoc cref="T:Microsoft.Extensions.Logging.ILogger`1"/>
+        </member>
+        <member name="M:JD.IdentityServer.Pages.Ciba.IndexModel.#ctor(Duende.IdentityServer.Services.IBackchannelAuthenticationInteractionService,Microsoft.Extensions.Logging.ILogger{JD.IdentityServer.Pages.Ciba.IndexModel})">
+            <summary>
+            Initializes a new instance of the <see cref="T:JD.IdentityServer.Pages.Ciba.IndexModel"/> class.
+            </summary>
+            <param name="backchannelAuthenticationInteractionService"><inheritdoc cref="T:Duende.IdentityServer.Services.IBackchannelAuthenticationInteractionService"/></param>
+            <param name="logger"><inheritdoc cref="T:Microsoft.Extensions.Logging.ILogger`1"/></param>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Ciba.IndexModel.LoginRequest">
+            <inheritdoc cref="T:Duende.IdentityServer.Models.BackchannelUserLoginRequest"/>
+        </member>
+        <member name="M:JD.IdentityServer.Pages.Ciba.IndexModel.OnGet(System.String)">
+            <summary>
+            The method called on HttpGet request.
+            </summary>
+            <param name="id">The ID.</param>
+            <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> representing the result of the asynchronous operation.</returns>
+        </member>
+        <member name="T:JD.IdentityServer.Pages.Ciba.InputModel">
+            <summary>
+            The Input model.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Ciba.InputModel.Button">
+            <summary>
+            Gets or sets the button value.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Ciba.InputModel.Description">
+            <summary>
+            Gets or sets the description.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Ciba.InputModel.Id">
+            <summary>
+            Gets or sets the ID.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Ciba.InputModel.ScopesConsented">
+            <summary>
+            Gets or sets the list of consented scopes.
+            </summary>
+        </member>
+        <member name="T:JD.IdentityServer.Pages.Ciba.ScopeViewModel">
+            <summary>
+            The scope view model.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Ciba.ScopeViewModel.Checked">
+            <summary>
+            Gets or sets a value indicating whether the consent has been checked.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Ciba.ScopeViewModel.Description">
+            <summary>
+            Gets or sets the description.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Ciba.ScopeViewModel.DisplayName">
+            <summary>
+            Gets or sets the display name.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Ciba.ScopeViewModel.Emphasize">
+            <summary>
+            Gets or sets a value indicating whether the consent should be emphasized.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Ciba.ScopeViewModel.Name">
+            <summary>
+            Gets or sets the name.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Ciba.ScopeViewModel.Required">
+            <summary>
+            Gets or sets a value indicating whether consent is required.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Ciba.ScopeViewModel.Resources">
+            <summary>
+            Gets or sets the list of resources.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Ciba.ScopeViewModel.Value">
+            <summary>
+            Gets or sets the value.
+            </summary>
+        </member>
+        <member name="T:JD.IdentityServer.Pages.Ciba.ViewModel">
+            <summary>
+            The Ciba view model.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Ciba.ViewModel.ApiScopes">
+            <summary>
+            Gets or sets the list of API scopes.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Ciba.ViewModel.BindingMessage">
+            <summary>
+            Gets or sets the binding message.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Ciba.ViewModel.ClientLogoUrl">
+            <summary>
+            Gets or sets the client logo URL.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Ciba.ViewModel.ClientName">
+            <summary>
+            Gets or sets the client name.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Ciba.ViewModel.ClientUrl">
+            <summary>
+            Gets or sets the client URL.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Ciba.ViewModel.IdentityScopes">
+            <summary>
+            Gets or sets the list of identity scopes.
+            </summary>
+        </member>
+        <member name="T:JD.IdentityServer.Pages.Ciba.ResourceViewModel">
+            <summary>
+            Gets or sets the resource view model.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Ciba.ResourceViewModel.DisplayName">
+            <summary>
+            Gets or sets the display name.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Ciba.ResourceViewModel.Name">
+            <summary>
+            Gets or sets the name.
+            </summary>
+        </member>
+        <member name="T:JD.IdentityServer.Pages.Consent.ConsentOptions">
+            <summary>
+            The consent options.
+            </summary>
+        </member>
+        <member name="F:JD.IdentityServer.Pages.Consent.ConsentOptions.InvalidSelectionErrorMessage">
+            <summary>
+            Gets the invalid selection error message.
+            </summary>
+        </member>
+        <member name="F:JD.IdentityServer.Pages.Consent.ConsentOptions.MustChooseOneErrorMessage">
+            <summary>
+            Gets the must choose one error message.
+            </summary>
+        </member>
+        <member name="F:JD.IdentityServer.Pages.Consent.ConsentOptions.EnableOfflineAccess">
+            <summary>
+            Gets a value indicating whether offline access is enabled.
+            </summary>
+        </member>
+        <member name="F:JD.IdentityServer.Pages.Consent.ConsentOptions.OfflineAccessDescription">
+            <summary>
+            Gets or sets the offline access description.
+            </summary>
+        </member>
+        <member name="F:JD.IdentityServer.Pages.Consent.ConsentOptions.OfflineAccessDisplayName">
+            <summary>
+            Gets or sets the offline access display name.
+            </summary>
+        </member>
+        <member name="T:JD.IdentityServer.Pages.Consent.Index">
+            <summary>
+            The Index model.
+            </summary>
+        </member>
+        <member name="M:JD.IdentityServer.Pages.Consent.Index.#ctor(Duende.IdentityServer.Services.IIdentityServerInteractionService,Duende.IdentityServer.Services.IEventService,Microsoft.Extensions.Logging.ILogger{JD.IdentityServer.Pages.Consent.Index})">
+            <summary>
+            Initializes a new instance of the <see cref="T:JD.IdentityServer.Pages.Consent.Index"/> class.
+            </summary>
+            <param name="interaction"><inheritdoc cref="T:Duende.IdentityServer.Services.IIdentityServerInteractionService"/></param>
+            <param name="events"><inheritdoc cref="T:Duende.IdentityServer.Services.IEventService"/></param>
+            <param name="logger"><inheritdoc cref="T:Microsoft.Extensions.Logging.ILogger`1"/></param>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Consent.Index.Input">
+            <summary>
+            Gets or sets the input model.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Consent.Index.View">
+            <summary>
+            Gets or sets the view model.
+            </summary>
+        </member>
+        <member name="M:JD.IdentityServer.Pages.Consent.Index.CreateScopeViewModel(Duende.IdentityServer.Validation.ParsedScopeValue,Duende.IdentityServer.Models.ApiScope,System.Boolean)">
+            <summary>
+            Creates the scope view model.
+            </summary>
+            <param name="parsedScopeValue">The parsed scope value.</param>
+            <param name="apiScope">The API scope.</param>
+            <param name="check">A value used to set the view model's Checked value.</param>
+            <returns>The scope view model.</returns>
+        </member>
+        <member name="M:JD.IdentityServer.Pages.Consent.Index.OnGet(System.String)">
+             <summary>
+            The method called on HttpPost request.
+             </summary>
+             <param name="returnUrl">The return url.</param>
+             <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> representing the result of the asynchronous operation.</returns>
+        </member>
+        <member name="M:JD.IdentityServer.Pages.Consent.Index.OnPost">
+            <summary>
+            The method called on HttpPost request.
+            </summary>
+            <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> representing the result of the asynchronous operation.</returns>
+        </member>
+        <member name="T:JD.IdentityServer.Pages.Consent.InputModel">
+            <summary>
+            The Input model.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Consent.InputModel.Button">
+            <summary>
+            Gets or sets the button value.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Consent.InputModel.Description">
+            <summary>
+            Gets or sets the description.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Consent.InputModel.RememberConsent">
+            <summary>
+            Gets or sets a value indicating whether the consent should be remembered.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Consent.InputModel.ReturnUrl">
+            <summary>
+            Gets or sets the return url.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Consent.InputModel.ScopesConsented">
+            <summary>
+            Gets or sets the list of consented scopes.
+            </summary>
+        </member>
+        <member name="T:JD.IdentityServer.Pages.Consent.ScopeViewModel">
+            <summary>
+            The scope view model.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Consent.ScopeViewModel.Checked">
+            <summary>
+            Gets or sets a value indicating whether the consent has been checked.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Consent.ScopeViewModel.Description">
+            <summary>
+            Gets or sets the description.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Consent.ScopeViewModel.DisplayName">
+            <summary>
+            Gets or sets the display name.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Consent.ScopeViewModel.Emphasize">
+            <summary>
+            Gets or sets a value indicating whether the consent is emphasized.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Consent.ScopeViewModel.Name">
+            <summary>
+            Gets or sets the name.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Consent.ScopeViewModel.Required">
+            <summary>
+            Gets or sets a value indicating whether the consent is required.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Consent.ScopeViewModel.Resources">
+            <summary>
+            Gets or sets the list of resources.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Consent.ScopeViewModel.Value">
+            <summary>
+            Gets or sets the value.
+            </summary>
+        </member>
+        <member name="T:JD.IdentityServer.Pages.Consent.ViewModel">
+            <summary>
+            The view model.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Consent.ViewModel.AllowRememberConsent">
+            <summary>
+            Gets or sets a value indicating whether a consent should be allowed to be remembered.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Consent.ViewModel.ApiScopes">
+            <summary>
+            Gets or sets the list of API scopes.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Consent.ViewModel.ClientLogoUrl">
+            <summary>
+            Gets or sets the client logo URL.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Consent.ViewModel.ClientName">
+            <summary>
+            Gets or sets the client name.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Consent.ViewModel.ClientUrl">
+            <summary>
+            Gets or sets the client URL.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Consent.ViewModel.IdentityScopes">
+            <summary>
+            Gets or sets the list of Identity scopes.
+            </summary>
+        </member>
+        <member name="T:JD.IdentityServer.Pages.Consent.ResourceViewModel">
+            <summary>
+            The resource view model.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Consent.ResourceViewModel.DisplayName">
+            <summary>
+            Gets or sets the display name.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Consent.ResourceViewModel.Name">
+            <summary>
+            Gets or sets the name.
+            </summary>
+        </member>
+        <member name="T:JD.IdentityServer.Pages.Device.DeviceOptions">
+            <summary>
+            The device options.
+            </summary>
+        </member>
+        <member name="F:JD.IdentityServer.Pages.Device.DeviceOptions.InvalidSelectionErrorMessage">
+            <summary>
+            The invalid selection error message.
+            </summary>
+        </member>
+        <member name="F:JD.IdentityServer.Pages.Device.DeviceOptions.InvalidUserCode">
+            <summary>
+            The invalid user code message.
+            </summary>
+        </member>
+        <member name="F:JD.IdentityServer.Pages.Device.DeviceOptions.MustChooseOneErrorMessage">
+            <summary>
+            The must choose one error message.
+            </summary>
+        </member>
+        <member name="F:JD.IdentityServer.Pages.Device.DeviceOptions.EnableOfflineAccess">
+            <summary>
+            A value indicating whether offline access is enabled.
+            </summary>
+        </member>
+        <member name="F:JD.IdentityServer.Pages.Device.DeviceOptions.OfflineAccessDescription">
+            <summary>
+            The offline access description.
+            </summary>
+        </member>
+        <member name="F:JD.IdentityServer.Pages.Device.DeviceOptions.OfflineAccessDisplayName">
+            <summary>
+            The offline access display name.
+            </summary>
+        </member>
+        <member name="T:JD.IdentityServer.Pages.Device.Index">
+            <summary>
+            The Index model.
+            </summary>
+        </member>
+        <member name="M:JD.IdentityServer.Pages.Device.Index.#ctor(Duende.IdentityServer.Services.IDeviceFlowInteractionService,Duende.IdentityServer.Services.IEventService,Microsoft.Extensions.Options.IOptions{Duende.IdentityServer.Configuration.IdentityServerOptions},Microsoft.Extensions.Logging.ILogger{JD.IdentityServer.Pages.Device.Index})">
+            <summary>
+            Initializes a new instance of the <see cref="T:JD.IdentityServer.Pages.Device.Index"/> class.
+            </summary>
+            <param name="interaction"><inheritdoc cref="T:Duende.IdentityServer.Services.IDeviceFlowInteractionService"/></param>
+            <param name="eventService"><inheritdoc cref="T:Duende.IdentityServer.Services.IEventService"/></param>
+            <param name="options"><inheritdoc cref="T:Microsoft.Extensions.Options.IOptions`1"/></param>
+            <param name="logger"><inheritdoc cref="T:Microsoft.Extensions.Logging.ILogger`1"/></param>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Device.Index.Input">
+            <summary>
+            Gets or sets the input.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Device.Index.View">
+            <summary>
+            Gets or sets the viewmodel.
+            </summary>
+        </member>
+        <member name="M:JD.IdentityServer.Pages.Device.Index.CreateScopeViewModel(Duende.IdentityServer.Validation.ParsedScopeValue,Duende.IdentityServer.Models.ApiScope,System.Boolean)">
+            <summary>
+            Creates the scoped view model.
+            </summary>
+            <param name="parsedScopeValue"><inheritdoc cref="T:Duende.IdentityServer.Validation.ParsedScopeValue"/></param>
+            <param name="apiScope"><inheritdoc cref="T:Duende.IdentityServer.Models.ApiScope"/></param>
+            <param name="check">The value used to determine the view model's Checked value.</param>
+            <returns><inheritdoc cref="T:JD.IdentityServer.Pages.Device.ScopeViewModel"/></returns>
+        </member>
+        <member name="M:JD.IdentityServer.Pages.Device.Index.OnGet(System.String)">
+            <summary>
+            The method called on HttpGet request.
+            </summary>
+            <param name="userCode">The user code.</param>
+            <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> representing the result of the asynchronous operation.</returns>
+        </member>
+        <member name="M:JD.IdentityServer.Pages.Device.Index.OnPost">
+            <summary>
+            The method called on HttpPost request.
+            </summary>
+            <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> representing the result of the asynchronous operation.</returns>
+        </member>
+        <member name="T:JD.IdentityServer.Pages.Device.InputModel">
+            <summary>
+            The Input model.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Device.InputModel.Button">
+            <summary>
+            Gets or sets the button value.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Device.InputModel.Description">
+            <summary>
+            Gets or sets the description.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Device.InputModel.RememberConsent">
+            <summary>
+            Gets or sets a value indicating whether the consent should be remembered.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Device.InputModel.ReturnUrl">
+            <summary>
+            Gets or sets the return url.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Device.InputModel.ScopesConsented">
+            <summary>
+            Gets or sets the list of consented scopes.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Device.InputModel.UserCode">
+            <summary>
+            Gets or sets the user code.
+            </summary>
+        </member>
+        <member name="T:JD.IdentityServer.Pages.Device.SuccessModel">
+            <summary>
+            The success model.
+            </summary>
+        </member>
+        <member name="M:JD.IdentityServer.Pages.Device.SuccessModel.OnGet">
+            <summary>
+            The method called on HttpGet request.
+            </summary>
+        </member>
+        <member name="T:JD.IdentityServer.Pages.Device.ViewModel">
+            <summary>
+            The view model.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Device.ViewModel.AllowRememberConsent">
+            <summary>
+            Gets or sets a value indicating whether a consent should be allowed to be remembered.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Device.ViewModel.ApiScopes">
+            <summary>
+            Gets or sets the list of API scopes.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Device.ViewModel.ClientLogoUrl">
+            <summary>
+            Gets or sets the client logo URL.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Device.ViewModel.ClientName">
+            <summary>
+            Gets or sets the client name.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Device.ViewModel.ClientUrl">
+            <summary>
+            Gets or sets the client URL.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Device.ViewModel.IdentityScopes">
+            <summary>
+            Gets or sets the list of Identity scopes.
+            </summary>
+        </member>
+        <member name="T:JD.IdentityServer.Pages.Device.ScopeViewModel">
+            <summary>
+            The scope view model.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Device.ScopeViewModel.Checked">
+            <summary>
+            Gets or sets a value indicating whether the scope has been checked.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Device.ScopeViewModel.Description">
+            <summary>
+            Gets or sets the description.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Device.ScopeViewModel.DisplayName">
+            <summary>
+            Gets or sets the display name.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Device.ScopeViewModel.Emphasize">
+            <summary>
+            Gets or sets a value indicating whether the scope is emphasized.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Device.ScopeViewModel.Required">
+            <summary>
+            Gets or sets a value indicating whether the scope is required.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Device.ScopeViewModel.Value">
+            <summary>
+            Gets or sets the value.
+            </summary>
+        </member>
+        <member name="T:JD.IdentityServer.Pages.Diagnostics.Index">
+            <summary>
+            The Index model.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Diagnostics.Index.View">
+            <summary>
+            Gets or sets the view model.
+            </summary>
+        </member>
+        <member name="M:JD.IdentityServer.Pages.Diagnostics.Index.OnGet">
+            <summary>
+            The method called on HttpGet request.
+            </summary>
+            <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> representing the result of the asynchronous operation.</returns>
+        </member>
+        <member name="T:JD.IdentityServer.Pages.Diagnostics.ViewModel">
+            <summary>
+            The viewmodel.
+            </summary>
+        </member>
+        <member name="M:JD.IdentityServer.Pages.Diagnostics.ViewModel.#ctor(Microsoft.AspNetCore.Authentication.AuthenticateResult)">
+            <summary>
+            Initializes a new instance of the <see cref="T:JD.IdentityServer.Pages.Diagnostics.ViewModel"/> class.
+            </summary>
+            <param name="result"><inheritdoc cref="P:JD.IdentityServer.Pages.Diagnostics.ViewModel.AuthenticateResult"/></param>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Diagnostics.ViewModel.AuthenticateResult">
+            <summary>
+            Gets the authenticate result.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Diagnostics.ViewModel.Clients">
+            <summary>
+            Gets the identityserver clients.
+            </summary>
+        </member>
+        <member name="T:JD.IdentityServer.Pages.Extensions">
+            <summary>
+            Extension methods.
+            </summary>
+        </member>
+        <member name="M:JD.IdentityServer.Pages.Extensions.GetSchemeSupportsSignOutAsync(Microsoft.AspNetCore.Http.HttpContext,System.String)">
+            <summary>
+            Determines if the authentication scheme support signout.
+            </summary>
+            <param name="context">The HTTP context.</param>
+            <param name="scheme">The scheme.</param>
+            <returns>A value indicating whether the scheme supports signout.</returns>
+        </member>
+        <member name="M:JD.IdentityServer.Pages.Extensions.IsNativeClient(Duende.IdentityServer.Models.AuthorizationRequest)">
+            <summary>
+            Checks if the redirect URI is for a native client.
+            </summary>
+            <param name="context">The authorization context.</param>
+            <returns>A value indicating whether the client is a native client.</returns>
+        </member>
+        <member name="M:JD.IdentityServer.Pages.Extensions.LoadingPage(Microsoft.AspNetCore.Mvc.RazorPages.PageModel,System.String)">
+            <summary>
+            Renders a loading page that is used to redirect back to the redirectUri.
+            </summary>
+            <param name="page">The page model.</param>
+            <param name="redirectUri">The redirect uri.</param>
+            <returns>A page redirect to /Redirect/Index with the redirect uri as a query param.</returns>
+        </member>
+        <member name="T:JD.IdentityServer.Pages.ExternalLogin.Callback">
+            <summary>
+            The callback model.
+            </summary>
+        </member>
+        <member name="M:JD.IdentityServer.Pages.ExternalLogin.Callback.#ctor(Duende.IdentityServer.Services.IIdentityServerInteractionService,Duende.IdentityServer.Services.IEventService,Microsoft.Extensions.Logging.ILogger{JD.IdentityServer.Pages.ExternalLogin.Callback},Duende.IdentityServer.Test.TestUserStore)">
+            <summary>
+            Initializes a new instance of the <see cref="T:JD.IdentityServer.Pages.ExternalLogin.Callback"/> class.
+            </summary>
+            <param name="interaction"><inheritdoc cref="T:Duende.IdentityServer.Services.IIdentityServerInteractionService"/></param>
+            <param name="events"><inheritdoc cref="T:Duende.IdentityServer.Services.IEventService"/></param>
+            <param name="logger"><inheritdoc cref="T:Microsoft.Extensions.Logging.ILogger"/></param>
+            <param name="users"><inheritdoc cref="T:Duende.IdentityServer.Test.TestUserStore"/></param>
+        </member>
+        <member name="M:JD.IdentityServer.Pages.ExternalLogin.Callback.OnGet">
+            <summary>
+            The method called on HttpGet request.
+            </summary>
+            <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> representing the result of the asynchronous operation.</returns>
+        </member>
+        <member name="T:JD.IdentityServer.Pages.ExternalLogin.Challenge">
+            <summary>
+            The Challenge model.
+            </summary>
+        </member>
+        <member name="M:JD.IdentityServer.Pages.ExternalLogin.Challenge.#ctor(Duende.IdentityServer.Services.IIdentityServerInteractionService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:JD.IdentityServer.Pages.ExternalLogin.Challenge"/> class.
+            </summary>
+            <param name="interactionService"><inheritdoc cref="T:Duende.IdentityServer.Services.IIdentityServerInteractionService"/></param>
+        </member>
+        <member name="M:JD.IdentityServer.Pages.ExternalLogin.Challenge.OnGet(System.String,System.String)">
+            <summary>
+             The method called on HttpGet request.
+            </summary>
+            <param name="scheme">The scheme.</param>
+            <param name="returnUrl">The return url.</param>
+            <returns>The view.</returns>
+        </member>
+        <member name="T:JD.IdentityServer.Pages.Grants.Index">
+            <summary>
+            The Index model.
+            </summary>
+        </member>
+        <member name="M:JD.IdentityServer.Pages.Grants.Index.#ctor(Duende.IdentityServer.Services.IIdentityServerInteractionService,Duende.IdentityServer.Stores.IClientStore,Duende.IdentityServer.Stores.IResourceStore,Duende.IdentityServer.Services.IEventService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:JD.IdentityServer.Pages.Grants.Index"/> class.
+            </summary>
+            <param name="interaction"><inheritdoc cref="T:Duende.IdentityServer.Services.IIdentityServerInteractionService"/></param>
+            <param name="clients"><inheritdoc cref="T:Duende.IdentityServer.Stores.IClientStore"/></param>
+            <param name="resources"><inheritdoc cref="T:Duende.IdentityServer.Stores.IResourceStore"/></param>
+            <param name="events"><inheritdoc cref="T:Duende.IdentityServer.Services.IEventService"/></param>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Grants.Index.ClientId">
+            <summary>
+            Gets or sets the identityserver client ID.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Grants.Index.View">
+            <summary>
+            Gets or sets the viewmodel.
+            </summary>
+        </member>
+        <member name="M:JD.IdentityServer.Pages.Grants.Index.OnGet">
+            <summary>
+            The method called on HttpGet request.
+            </summary>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> representing the result of the asynchronous operation.</returns>
+        </member>
+        <member name="M:JD.IdentityServer.Pages.Grants.Index.OnPost">
+            <summary>
+            The method called on HttpPost request.
+            </summary>
+            <returns>A <see cref="T:System.Threading.Tasks.Task`1"/> representing the result of the asynchronous operation.</returns>
+        </member>
+        <member name="T:JD.IdentityServer.Pages.Grants.ViewModel">
+            <summary>
+            The view model.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Grants.ViewModel.Grants">
+            <summary>
+            Gets or sets the list of grants.
+            </summary>
+        </member>
+        <member name="T:JD.IdentityServer.Pages.Grants.GrantViewModel">
+            <summary>
+            The grant view model.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Grants.GrantViewModel.ApiGrantNames">
+            <summary>
+            Gets or sets the list of API grant names.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Grants.GrantViewModel.ClientId">
+            <summary>
+            Gets or sets the clientID.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Grants.GrantViewModel.ClientLogoUrl">
+            <summary>
+            Gets or sets the client logo URL.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Grants.GrantViewModel.ClientName">
+            <summary>
+            Gets or sets the client name.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Grants.GrantViewModel.ClientUrl">
+            <summary>
+            Gets or sets the client URL.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Grants.GrantViewModel.Created">
+            <summary>
+            Gets or sets the datetime on which the grant was created.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Grants.GrantViewModel.Description">
+            <summary>
+            Gets or sets the description.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Grants.GrantViewModel.Expires">
+            <summary>
+            Gets or sets the datetime on which the grant exprires.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Grants.GrantViewModel.IdentityGrantNames">
+            <summary>
+            Gets or sets the list of Identity grant names.
+            </summary>
+        </member>
+        <member name="T:JD.IdentityServer.Pages.Home.Error.Index">
+            <summary>
+            The index model.
+            </summary>
+        </member>
+        <member name="M:JD.IdentityServer.Pages.Home.Error.Index.#ctor(Duende.IdentityServer.Services.IIdentityServerInteractionService,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            Initializes a new instance of the <see cref="T:JD.IdentityServer.Pages.Home.Error.Index"/> class.
+            </summary>
+            <param name="interaction"><inheritdoc cref="T:Duende.IdentityServer.Services.IIdentityServerInteractionService"/></param>
+            <param name="environment"><inheritdoc cref="T:Microsoft.AspNetCore.Hosting.IWebHostEnvironment"/></param>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Home.Error.Index.View">
+            <summary>
+            Gets or sets the viewmodel.
+            </summary>
+        </member>
+        <member name="M:JD.IdentityServer.Pages.Home.Error.Index.OnGet(System.String)">
+            <summary>
+            The method called on HttpGet request.
+            </summary>
+            <param name="errorId">The error ID.</param>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> representing the result of the asynchronous operation.</returns>
+        </member>
+        <member name="T:JD.IdentityServer.Pages.Home.Error.ViewModel">
+            <summary>
+            The view model.
+            </summary>
+        </member>
+        <member name="M:JD.IdentityServer.Pages.Home.Error.ViewModel.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:JD.IdentityServer.Pages.Home.Error.ViewModel"/> class.
+            </summary>
+        </member>
+        <member name="M:JD.IdentityServer.Pages.Home.Error.ViewModel.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:JD.IdentityServer.Pages.Home.Error.ViewModel"/> class.
+            </summary>
+            <param name="error">The error message.</param>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Home.Error.ViewModel.Error">
+            <summary>
+            Gets or sets the error message.
+            </summary>
+        </member>
+        <member name="T:JD.IdentityServer.Pages.Index">
+            <summary>
+            The index model.
+            </summary>
+        </member>
+        <member name="F:JD.IdentityServer.Pages.Index.Version">
+            <summary>
+            The version.
+            </summary>
+        </member>
+        <member name="M:JD.IdentityServer.Pages.Index.OnGet">
+            <summary>
+            The method called on HttpGet request.
+            </summary>
+        </member>
+        <member name="T:JD.IdentityServer.Pages.Redirect.IndexModel">
+            <summary>
+            The Index model.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.Redirect.IndexModel.RedirectUri">
+            <summary>
+            Gets or sets the redirect uri.
+            </summary>
+        </member>
+        <member name="M:JD.IdentityServer.Pages.Redirect.IndexModel.OnGet(System.String)">
+            <summary>
+            The method called on HttpGet request.
+            </summary>
+            <param name="redirectUri">The redirect uri.</param>
+            <returns>The redirect view.</returns>
+        </member>
+        <member name="T:JD.IdentityServer.Pages.SecurityHeadersAttribute">
+            <summary>
+            The security headers attribute.
+            </summary>
+        </member>
+        <member name="M:JD.IdentityServer.Pages.SecurityHeadersAttribute.OnResultExecuting(Microsoft.AspNetCore.Mvc.Filters.ResultExecutingContext)">
+            <inheritdoc cref="M:Microsoft.AspNetCore.Mvc.Filters.ActionFilterAttribute.OnResultExecuting(Microsoft.AspNetCore.Mvc.Filters.ResultExecutingContext)"/>
+        </member>
+        <member name="T:JD.IdentityServer.Pages.TestUsers">
+            <summary>
+            The users used for testing.
+            </summary>
+        </member>
+        <member name="P:JD.IdentityServer.Pages.TestUsers.Users">
+            <summary>
+            Gets the users used for testing.
+            </summary>
+        </member>
     </members>
 </doc>

@@ -1,0 +1,25 @@
+﻿@page
+@model IndexModel
+
+@using Microsoft.AspNetCore.Authentication
+@using System.Security.Claims
+
+<h2>Claims</h2>
+
+<dl>
+	@foreach (Claim _claim in User.Claims)
+	{
+		<dt>@_claim.Type</dt>
+		<dd>@_claim.Value</dd>
+	}
+</dl>
+
+<h2>Properties</h2>
+
+<dl>
+	@foreach ((string? _key, string? _value) in (await HttpContext.AuthenticateAsync()).Properties?.Items ?? new Dictionary<string, string?>())
+	{
+		<dt>@_key</dt>
+		<dd>@_value</dd>
+	}
+</dl>

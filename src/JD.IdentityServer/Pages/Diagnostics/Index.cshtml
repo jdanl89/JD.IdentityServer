@@ -1,0 +1,62 @@
+@page
+@using System.Security.Claims
+@model JD.IdentityServer.Pages.Diagnostics.Index
+
+<div class="diagnostics-page">
+    <div class="lead">
+        <h1>Authentication Cookie</h1>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Claims</h2>
+                </div>
+                <div class="card-body">
+                    <dl>
+                        @foreach (Claim _claim in Model.View.AuthenticateResult.Principal.Claims)
+                        {
+                            <dt>@_claim.Type</dt>
+                            <dd>@_claim.Value</dd>
+                        }
+                    </dl>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Properties</h2>
+                </div>
+                <div class="card-body">
+                    <dl>
+                        @foreach (KeyValuePair<string, string?> _prop in Model.View.AuthenticateResult.Properties.Items)
+                        {
+                            <dt>@_prop.Key</dt>
+                            <dd>@_prop.Value</dd>
+                        }
+                        @if (Model.View.Clients.Any())
+                        {
+                            <dt>Clients</dt>
+                            <dd>
+                                @{
+                                    string[] _clients = Model.View.Clients.ToArray();
+                                    for(int _i = 0; _i < _clients.Length; _i++)
+                                    {
+                                        <text>@_clients[_i]</text>
+                                        if (_i < _clients.Length - 1)
+                                        {
+                                            <text>, </text>
+                                        }
+                                    }
+                                }
+                            </dd>
+                        }
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -32,7 +32,10 @@ try
 }
 catch (Exception _ex)
 {
-    Log.Fatal(_ex, "Unhandled exception");
+    if (_ex.GetType().Name != "StopTheHostException")
+    {
+        Log.Fatal(_ex, "Unhandled exception");
+    }
 }
 finally
 {

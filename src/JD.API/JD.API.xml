@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>JD.API</name>
+    </assembly>
+    <members>
+        <member name="T:JD.API.Controllers.IdentityController">
+            <summary>
+            API class requiring bearer auth.
+            </summary>
+        </member>
+        <member name="M:JD.API.Controllers.IdentityController.Get">
+            <summary>
+            Gets the caller's claims.
+            </summary>
+            <returns>The caller's claims.</returns>
+        </member>
+        <member name="T:JD.API.Controllers.WeatherForecastController">
+            <summary>
+            The API controller for retrieving weather forecasts.
+            </summary>
+        </member>
+        <member name="M:JD.API.Controllers.WeatherForecastController.#ctor(Microsoft.Extensions.Logging.ILogger{JD.API.Controllers.WeatherForecastController})">
+            <summary>
+            Initializes a new instance of the <see cref="T:JD.API.Controllers.WeatherForecastController"/> class.
+            </summary>
+            <param name="logger">The logger.</param>
+        </member>
+        <member name="M:JD.API.Controllers.WeatherForecastController.Get">
+            <summary>
+            Gets the weather forecast.
+            </summary>
+            <returns><inheritdoc cref="T:JD.API.WeatherForecast"/></returns>
+        </member>
+        <member name="T:JD.API.WeatherForecast">
+            <summary>
+            The Weather Forecast model.
+            </summary>
+        </member>
+        <member name="P:JD.API.WeatherForecast.Date">
+            <summary>
+            Gets or sets the date.
+            </summary>
+        </member>
+        <member name="P:JD.API.WeatherForecast.Summary">
+            <summary>
+            Gets or sets the forecast summary.
+            </summary>
+        </member>
+        <member name="P:JD.API.WeatherForecast.TemperatureC">
+            <summary>
+            Gets or sets the temperature in Celsius.
+            </summary>
+        </member>
+        <member name="P:JD.API.WeatherForecast.TemperatureF">
+            <summary>
+            Gets the temperature in Fahrenheit.
+            </summary>
+        </member>
+    </members>
+</doc>
